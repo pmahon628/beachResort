@@ -20,20 +20,31 @@ export default class Services extends Component {
          icon:<FaShuttleVan/>,
          title:"Complimentary Shuttle!",
          info:"Free Shuttle, ask the front desk for more details!"
-        }
+        },
         {
          icon:<FaBeer/>,
-         title:""
+         title:"Great local Beer",
+         info:"We make our own beers on property, come check out the variety!"
         }
      ]
     }
     redner(){
         return(
-            <div>
+            <section className="services">
+            <Title title="services" />
+             <div className="services-center">
+             {this.state.services.map(item,index => {
+               return <article key={index} className="service">
+               <span>{item.icon}</span>
+               <span>{item.icon}</span>
+               <span>{item.icon}</span>
+               <span>{item.icon}</span>
+             })}
+             </div>
                 <Title title="services"/>
 
                 </Title>
-            </div>
+            
         )
     }
 }
