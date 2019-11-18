@@ -10,3 +10,5 @@ Component{
         )
     }
 }
+
+// page that shows rooms.

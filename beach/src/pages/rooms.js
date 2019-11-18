@@ -15,3 +15,5 @@ const Rooms = () => {
 };
 
 export default Rooms;
+
+// page about the different rooms for rent

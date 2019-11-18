@@ -11,3 +11,5 @@ export default function Error(){
         </Banner>
          <Hero />;
 }
+
+{/* simple error page for handling if you do something to error out the page */}

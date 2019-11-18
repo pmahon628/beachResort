@@ -47,4 +47,7 @@ export default class Services extends Component {
             
         )
     }
-}
+};
+
+// component that has various services the property offers. set the state with the 
+// different items and then pass them using the span below.

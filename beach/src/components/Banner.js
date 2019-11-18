@@ -11,3 +11,5 @@ export default function Banner({children, title, subtitle }){
      </div>
     )
 }
+
+// banner component that takes in three props which are in the {} and displays them

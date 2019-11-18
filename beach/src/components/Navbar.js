@@ -38,3 +38,5 @@ state={
     );
    }
 }
+
+// Navbar component brings you to other pages powered by react-router-dom
