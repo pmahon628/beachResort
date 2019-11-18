@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 
-export default singleRoom extends
-Component{
-    render(){
-        return(
-            <div>
+// export default singleRoom extends
+// Component{
+//     render(){
+//         return(
+//             <div>
                 
-            </div>
-        )
-    }
-}
+//             </div>
+//         )
+//     }
+// }
 
 // page that shows rooms.

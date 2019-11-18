@@ -28,26 +28,26 @@ export default class Services extends Component {
         }
      ]
     }
-    redner(){
-        return(
-            <section className="services">
+    render() {
+        return (
+          <section className="services">
             <Title title="services" />
-             <div className="services-center">
-             {this.state.services.map(item,index => {
-               return <article key={index} className="service">
-               <span>{item.icon}</span>
-               <span>{item.icon}</span>
-               <span>{item.icon}</span>
-               <span>{item.icon}</span>
-             })}
-             </div>
-                <Title title="services"/>
+            <div className="services-center">
+              {this.state.services.map(item => {
+                return (
+                  <article key={`item-${item.title}`} className="service">
+                    <span>{item.icon}</span>
+                    <h6>{item.title}</h6>
+                    <p>{item.info}</p>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        );
+      }
+    } 
 
-                </Title>
-            
-        )
-    }
-};
 
 // component that has various services the property offers. set the state with the 
 // different items and then pass them using the span below.
