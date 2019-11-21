@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
-// import FeaturedRooms from "../components/FeaturedRooms";
+import FeaturedRooms from "../FeaturedRooms";
 
-const home = () => {
+export  default function home = () => {
   return (
     <>
       <Hero>
@@ -19,7 +19,7 @@ const home = () => {
         </Banner>
       </Hero>
       <Services />
-      {/* <FeaturedRooms /> */}
+      <FeaturedRooms />
     </>
   );
 };
