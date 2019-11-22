@@ -13,7 +13,7 @@ state={
 
 componentDidMount(){
     let rooms = this.formatData(items)
-    let featuredRooms = rooms.filter(room = room.featured
+    let featuredRooms = rooms.filter(rooms = rooms.featured
         === true);
     this.setState({
         rooms, 
@@ -36,11 +36,11 @@ formatData(items){
 }
 
 render(){
-        return <RoomContext.Provider value={{ ...this.state }}>
+        return ( <RoomContext.Provider value={{ ...this.state }}>
         {this.props.children}
         </RoomContext.Provider>
         );
-      }
+    }
 }
 
 const RoomConsumer = RoomContext.Consumer;

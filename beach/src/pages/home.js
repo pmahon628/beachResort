@@ -5,7 +5,7 @@ import Banner from "../components/Banner";
 import Services from "../components/Services";
 import FeaturedRooms from "../FeaturedRooms";
 
-export  default function home = () => {
+const home = () => {
   return (
     <>
       <Hero>
