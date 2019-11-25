@@ -1,22 +1,38 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
-// import RoomsContainer from "../components/RoomsContainer";
+import DefaultImg from "../images/room-1.jpeg";
+import PropTypes from "prop-types";
+export default function Room({ room }) {
+  const { name, slug, images, price } = room;
 
-const Rooms = () => {
   return (
-    <>
-      <Hero hero="roomsHero">
-        <Banner title="our rooms">
-          <Link to="/" className="btn-primary">
-            return home
+    <article className="room">
+       <div className="img-container">
+         <img src={images[0] || DefaultImg }
+          alt="single room" />
+          <div className="price-top">
+          <h6>${price}</h6>
+          <p>$per night</p>
+          </div>
+          <Link to={`/rooms/${slug}`} 
+          className="btn-primary room-link">
+            Features
           </Link>
-        </Banner>
-      </Hero>
-      {/* <RoomsContainer /> */}
-    </>
-  );
+         </div>
+         <p className="room-info">{name}</p>
+        </article>
+        );
+  }
+
+  Room.PropTypes = {
+    room: PropTypes.shape({
+     name:PropTypes.string.isRequired,
+     slug:PropTypes.string.isRequired,
+     images:PropTypes.arrayOf(PropTypes.string)
+     .isRequired,
+     price: PropTypes.number.isRequired
+     
+  })
 };
 
 export default Rooms;
