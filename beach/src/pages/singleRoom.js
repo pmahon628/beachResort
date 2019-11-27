@@ -31,7 +31,7 @@ export default class SingleRoom extends Component {
          );
         }
     const { 
-        name, 
+        n ame, 
         description, 
         capacity, 
         size, 
@@ -41,7 +41,7 @@ export default class SingleRoom extends Component {
         pets,
         images}
         =room
-        return <Hero hero="roomsHero">
+          return <Hero hero="roomsHero">
         <Banner title={`${name} room`}>
         <Link to='/rooms'className="btn-primary">
         Back To Rooms
