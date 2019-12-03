@@ -21,7 +21,6 @@ const home = () => {
       </Hero>
       <Services />
       <FeaturedRooms />
-      <Button>hello</Button>
     </>
   );
 };
