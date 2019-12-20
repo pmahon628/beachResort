@@ -11,8 +11,8 @@ const home = () => {
     <>
       <Hero>
         <Banner
-          title="luxurious rooms"
-          subtitle="deluxe rooms starting at $299"
+          title="Your Personal Mountain Escape!"
+          subtitle="Come Check Out The Best Priced Rooms in the Area!"
         >
           <Link to="/rooms" className="btn-primary">
             our rooms
@@ -20,7 +20,7 @@ const home = () => {
         </Banner>
       </Hero>
       <Services />
-      <FeaturedRooms />
+      {/* <FeaturedRooms /> */}
     </>
   );
 };
