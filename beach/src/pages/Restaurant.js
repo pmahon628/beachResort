@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
+import Menu from "../components/Menu";
 
 const Restaurant = () => {
     return (
@@ -16,6 +17,7 @@ const Restaurant = () => {
           </Link>
              </Banner>
         </Hero>
+        < Menu />
         </>
     );
   };
