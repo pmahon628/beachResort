@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
-import FeaturedRooms from "../components/FeaturedRooms";
-import Button from '../components/StyledHero';
+import Button from '../styledComponents/StyledHero';
 
 const home = () => {
   return (
@@ -20,7 +19,6 @@ const home = () => {
         </Banner>
       </Hero>
       <Services />
-      {/* <FeaturedRooms /> */}
     </>
   );
 };
