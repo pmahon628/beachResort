@@ -5,7 +5,7 @@ export default class Menu extends Component {
   state = {
     menus: [
       {
-        title: "Appetizers",
+        titleA: "Appetizers",
         info: "Start your meal with these delicious sides to share"
         },
 
@@ -15,7 +15,7 @@ export default class Menu extends Component {
           price: "8.95"
         },
         {
-        title: "Main Course",
+        titleM: "Main Course",
         info: "Try any of these comfort food inspired entrees"
         },
         {
@@ -27,14 +27,15 @@ export default class Menu extends Component {
   };
   render() {
     return (
-      <section className="services">
-        <Title title="services" />
-        <div className="services-center">
+      <section className="menu">
+        <Title title="menu" />
+        <div className="menu">
           {this.state.menus.map(item => {
             return (
               <article key={`item-${item.title}`} className="service">
                 {/* <span>{item.icon}</span> */}
-                <h6>{item.title}</h6>
+                <h6>{item.titleA}</h6>
+                <h6>{item.titleM}</h6>
                 <p>{item.name}</p>
                 <p>{item.info}</p>
                 <p>{item.price}</p>
