@@ -1,14 +1,16 @@
 import React from 'react'
+import { styledBanner } from "../styledComponents/styledBanner"
 
 
 export default function Banner({children, title, subtitle }){
     return (
-     <div className="Banner">
+        <styledBanner  
         <h1>{title}</h1>
-        <div></div>
         <p>{subtitle}</p>
         {children}
-     </div>
+     />
+
+
     )
 }
 
