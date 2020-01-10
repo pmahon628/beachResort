@@ -1,13 +1,22 @@
 import styled from 'styled-components'
 
-const styledBanner = styled.banner`
+const Banner = styled.div`
 display: inline-block;
 background: rgba(0, 0, 0, 0.5);
 color: var(--mainWhite);
 padding: 2rem 1rem;
 text-align: center;
 text-transform: capitalize;
-letter-spacing: var(--mainSpacing);`
+letter-spacing: var(--mainSpacing);
+font-size: 2.5rem;
+width: 10rem;
+ height: 5px;
+background: var(--primaryColor);
+margin: 1.7rem auto;
+;
+`
+
+export default Banner;
 
 // * Banner */
 // .banner {
